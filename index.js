@@ -1,4 +1,4 @@
-#!/usr/bin/env/ node
+#!/usr/bin/env node
 
 // NPM packages require
 const chalk = require("chalk")
@@ -6,7 +6,6 @@ const clear = require("clear")
 const figlet = require("figlet")
 
 // Files require
-const files = require("./lib/questions")
 const inquirer = require("./lib/inquirer")
 
 // Start the main functions of the app
