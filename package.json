@@ -1,7 +1,7 @@
 {
 	"name": "wptb",
 	"description": "Wordpress theme bootstrapper",
-	"version": "0.0.22",
+	"version": "0.0.27",
 	"main": "index.js",
 	"scripts": {
 		"start": "node index.js"
@@ -20,7 +20,8 @@
 	"keywords": [
 		"wordpress",
 		"theme",
-		"wordpress-theme"
+		"wordpress-theme",
+		"scaffolder"
 	],
 	"author": "kael <Twitter> (https://twitter.com/iamKael_)",
 	"license": "MIT",
