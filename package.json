@@ -1,7 +1,7 @@
 {
 	"name": "wptb",
 	"description": "Wordpress theme bootstrapper",
-	"version": "0.0.31",
+	"version": "0.0.33",
 	"main": "index.js",
 	"scripts": {
 		"start": "node index.js"

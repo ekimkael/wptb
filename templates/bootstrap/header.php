@@ -8,7 +8,7 @@
   <!-- Favicon here -->
   <link rel="shortcut icon" type="image/png" href="<?php echo (THEME_URI); ?>/images/favicon.png">
   <!-- Fonts here -->
-  <!-- <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet"> -->
+
   <!-- wp-head & css files -->
   <?php wp_head(); ?>
 
