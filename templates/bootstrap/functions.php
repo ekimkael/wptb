@@ -9,6 +9,13 @@ function theme_title_separator()
   return "|";
 }
 
+function menu_anchor_class($atts, $item, $args)
+{
+  $class = 'nav-link'; // or something based on $item
+  $atts['class'] = $class;
+  return $atts;
+}
+
 function theme_supports()
 {
   add_theme_support("title-tag");
@@ -42,3 +49,4 @@ add_action("wp_enqueue_scripts", "theme_scripts");
 
 // filters
 add_filter("document_title_separator", "theme_title_separator");
+add_filter('nav_menu_link_attributes', 'menu_anchor_class', 10, 3);
