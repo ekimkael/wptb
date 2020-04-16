@@ -21,7 +21,16 @@
 
   <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
     <div class="container">
-      <a class="navbar-brand text-primary" href="<?php bloginfo("url") ?>"><?php bloginfo("name") ?></a>
+      <a class="navbar-brand text-primary" href="<?php echo esc_url(home_url('/')); ?>">
+        <?php $custom_logo_id = get_theme_mod('custom_logo');
+        $logo = wp_get_attachment_image_src($custom_logo_id, 'full');
+        if (has_custom_logo()) {
+          echo '<img class="d-inline-block align-top" src="' . esc_url($logo[0]) . '"  width="30" height="30" alt="' . esc_attr(get_bloginfo('name', 'display')) . '">';
+          echo bloginfo("name");
+        } else {
+          echo bloginfo("name");
+        } ?>
+      </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobileMenu" aria-controls="mobileMenu" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
